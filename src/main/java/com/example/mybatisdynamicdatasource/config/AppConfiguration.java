@@ -4,7 +4,6 @@ import com.example.mybatisdynamicdatasource.datasource.DynamicDataSource;
 import com.example.mybatisdynamicdatasource.datasource.DynamicDataSourceName;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.autoconfigure.quartz.QuartzDataSource;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;

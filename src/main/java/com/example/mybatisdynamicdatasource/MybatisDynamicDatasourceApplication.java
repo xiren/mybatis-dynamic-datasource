@@ -27,10 +27,10 @@ public class MybatisDynamicDatasourceApplication {
 
         @Override
         public void run(String... args) throws Exception {
-            Person person = new Person();
-            person.setEmail("demo@email.com");
-            person.setName("demo");
-            person.setSex(Byte.valueOf("1"));
+            Person person = new Person()
+                    .setEmail("demo@email.com")
+                    .setName("demo")
+                    .setSex(Byte.valueOf("1"));
             personMapper.save(person);
             personMapper.list().forEach(p -> System.out.println(p));
         }
