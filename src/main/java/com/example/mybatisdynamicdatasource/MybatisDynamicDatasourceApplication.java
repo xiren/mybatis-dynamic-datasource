@@ -1,7 +1,8 @@
 package com.example.mybatisdynamicdatasource;
 
-import com.example.mybatisdynamicdatasource.entity.Person;
-import com.example.mybatisdynamicdatasource.mapper.PersonMapper;
+import com.example.mybatisdynamicdatasource.domain.Person;
+import com.example.mybatisdynamicdatasource.domain.Phone;
+import com.example.mybatisdynamicdatasource.infrastructure.repo.mapper.PersonMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -30,8 +31,12 @@ public class MybatisDynamicDatasourceApplication {
             Person person = new Person()
                     .setEmail("demo@email.com")
                     .setName("demo")
-                    .setSex(Byte.valueOf("1"));
+                    .setSex(Byte.valueOf("1"))
+                    .setPhone(new Phone()
+                            .setBrand("iPhone")
+                            .setSystem("iOS"));
             personMapper.save(person);
+            System.out.println(person.getId());
             personMapper.list().forEach(p -> System.out.println(p));
         }
     }

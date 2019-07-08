@@ -1,4 +1,4 @@
-package com.example.mybatisdynamicdatasource.datasource;
+package com.example.mybatisdynamicdatasource.infrastructure.config.datasource;
 
 public class DynamicDataSourceHolder {
 

@@ -1,7 +1,7 @@
-package com.example.mybatisdynamicdatasource.config;
+package com.example.mybatisdynamicdatasource.infrastructure.config;
 
-import com.example.mybatisdynamicdatasource.datasource.DynamicDataSource;
-import com.example.mybatisdynamicdatasource.datasource.DynamicDataSourceName;
+import com.example.mybatisdynamicdatasource.infrastructure.config.datasource.DynamicDataSource;
+import com.example.mybatisdynamicdatasource.infrastructure.config.datasource.DynamicDataSourceName;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
